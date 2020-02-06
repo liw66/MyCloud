@@ -7,6 +7,14 @@
     <groupId>com.li</groupId>
     <artifactId>mycloud</artifactId>
     <version>1.0</version>
+    <packaging>pom</packaging>
 
+    <modules>
+        <module>myeureka</module>
+        <module>myconfig</module>
+        <module>myservice</module>
+        <module>myclient</module>
+        <module>myzuul</module>
+    </modules>
 
 </project>
