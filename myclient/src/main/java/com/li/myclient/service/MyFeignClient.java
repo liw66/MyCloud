@@ -3,9 +3,6 @@ package com.li.myclient.service;
 import com.li.myclient.service.impl.MyFeignClientFallback;
 import org.springframework.cloud.openfeign.FeignClient;
 import org.springframework.web.bind.annotation.GetMapping;
-import org.springframework.web.bind.annotation.PostMapping;
-import org.springframework.web.bind.annotation.RequestMapping;
-import org.springframework.web.bind.annotation.RequestMethod;
 
 /**
  * @program: mycloud
@@ -16,6 +13,6 @@ import org.springframework.web.bind.annotation.RequestMethod;
 @FeignClient(value="myservice",fallback = MyFeignClientFallback.class)
 public interface MyFeignClient {
 
-    @PostMapping("/getTime")
+    @GetMapping("/getTime")
     public String getTime();
 }
